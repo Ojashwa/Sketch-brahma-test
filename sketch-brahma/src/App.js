@@ -33,21 +33,22 @@ function App() {
         </a>
         <div id="buttons">
           {urlIndex ? (
-              <button
-                onClick={() => {
-                  setUrlIndex(0);
-                }}
-              >
-                Get previous
-              </button>
-            ):""}
-          <button
-            onClick={() => {
-              setUrlIndex(1);
-            }}
-          >
-            Get next
-          </button>
+            <button
+              onClick={() => {
+                setUrlIndex(0);
+              }}
+            >
+              Get previous
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                setUrlIndex(1);
+              }}
+            >
+              Get next
+            </button>
+          )}
         </div>
       </header>
     </div>
